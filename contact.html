@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Université Thomas Sankara</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body> <header id="contact">
+        <img class="logo" src="Images/logo-uts.jpeg" alt="logo de l'université Thomas Sankara">
+        <p class="sc">
+            <script>
+                let actuel = new Date();
+                document.write("Bienvenue à vous aujourd'hui nous sommes " + actuel);
+            </script>
+        </p>
+        <nav>
+            <div class="table">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="filiere.html">Voir les filières</a></li>
+                    <li><a href="enseignants.html">Enseignants</a></li>
+                    <li><a href="emplois-temps.html">Emploi du temps</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="vide"></div>
+
+    <main>
+        <div class="container-form">
+            <form id="contactForm" action="mailto:drabo6679@gmail.com" method="post" enctype="text/plain"> 
+                <h1>Contactez-nous</h1>
+                <div class="separation"></div>
+                
+                <div class="corps-formulaire">
+                    <div class="gauche">
+                        <div class="input-box">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom" placeholder="Votre Nom">
+                            <span class="error-message" id="error-nom"></span> 
+                        </div>
+
+                        <div class="input-box">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Votre email">
+                            <span class="error-message" id="error-email"></span> 
+                        </div>
+
+                        <div class="input-box">
+                            <label for="sujet">Sujet</label>
+                            <input type="text" id="sujet" name="sujet" placeholder="Sujet d'intérêt">
+                            <span class="error-message" id="error-sujet"></span>
+                        </div>
+                    </div>
+
+                    <div class="droite">
+                        <div class="input-box">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Votre message ici..." rows="5"></textarea>
+                            <span class="error-message" id="error-message"></span> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pied-formulaire" style="text-align: center;">
+                    <button type="submit">Envoyer le message</button>
+                    <p id="success-message" style="color: green; font-weight: bold;"></p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p class="P1">Copyright 2025 Ibrahim DRABO - Toute reproduction interdite et punie par la loi.</p>
+        <p class="P2">Pour en savoir plus <a href="https://www.uts.bf">Découvrez l'Université Thomas SANKARA</a></p>
+        
+        <div class="container-map">
+            <div class="map-frame">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3897.4363435427183!2d-1.3975762253046756!3d12.35338102813133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe2ebe625f4489a3%3A0xe549247186675034!2sUniversit%C3%A9%20Thomas%20SANKARA!5e0!3m2!1sfr!2sbf!4v1700000000000!5m2!1sfr!2sbf" 
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="map-infos">
+                <h3>Vos raccourcis</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="filiere.html">Nos filières</a></li>
+                    <li><a href="enseignants.html">Nos enseignants</a></li>
+                    <li><a href="emplois-temps.html">Nos emplois-temps</a></li>
+                    <li><a href="#contact">Contactez-nous</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/script_cont.js"></script>
+
+</body>
+</html>

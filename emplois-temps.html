@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Emploi du Temps L3 - UTS</title>
+    <link rel="stylesheet" href="style_emp.css">
+    
+</head>
+<body>
+
+    <header id="emplois">
+
+        <img class="logo" src="Images/logo-uts.jpeg" alt="logo de l'université Thomas Sankara">
+        <p class="sc"><script>
+            let actuel= new Date();
+            document.write("Bienvenue à vous aujourd'hui nous somme " +actuel);
+            /*const dateMessage = "Bienvenue à vous chers visiteur a cet jours du " + new Date().toUTCString();
+            document.getElementById('message-date-heure').textContent = dateMessage;*/
+        
+        </script></p>
+        <nav>
+            <div class="table">
+                <ul>
+                    <li class="menu-ind">
+                      <a href="index.html">Accueil</a>
+                    </li>
+                    <li class="menu-fil">
+                        <a href="filiere.html">Voir les filières</a>
+                    </li>
+                    <li class="menu-ens">
+                        <a href="enseignants.html">Enseigants</a>
+                    </li>
+                    <li class="menu-emp">
+                        <a href="emplois-temps.html">Emploi du temps</a>
+                    </li>
+                    <li class="menu-cont">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <h2>Emploi du Temps - Licence 2 Informatique</h2>
+    
+    <button class="btn-filter" onclick="filtrerMatin()">Afficher uniquement le Matin</button>
+    <button class="btn-filter" onclick="filtrerSoir()">Afficher uniquement le soir</button>
+    <button class="btn-filter" onclick="resetTable()">Tout afficher</button>
+
+    <table id="timetable">
+        <thead>
+            <tr>
+                <th>Heure</th>
+                <th>Lundi</th>
+                <th>Mardi</th>
+                <th>Mercredi</th>
+                <th>Jeudi</th>
+                <th>Vendredi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="matin">
+                <td>08h - 12h</td>
+                <td>Développement Web</td>
+                <td>Introduction Réseaux</td>
+                <td>Base de Données</td>
+                <td>Administration de Base de Données</td>
+                <td>Administration de Réseau</td>
+            </tr>
+            <tr class="apres-midi">
+                <td>14h - 18h</td>
+                <td>Développement Web</td>
+                <td>Introduction Réseaux</td>
+                <td>Base de Données</td>
+                <td>Administration de Base de Données</td>
+                <td>Administration de Réseau</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Emploi du Temps - Licence 3 Informatique</h2>
+    
+    
+
+    <table id="timetable">
+        <thead>
+            <tr>
+                <th>Heure</th>
+                <th>Lundi</th>
+                <th>Mardi</th>
+                <th>Mercredi</th>
+                <th>Jeudi</th>
+                <th>Vendredi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="matin">
+                <td>08h - 12h</td>
+                <td>Programmation réseaux et systèmes</td>
+                <td>Prototypage avec Python</td>
+                <td>Programmation en Java</td>
+                <td>Programmation Web et Framework</td>
+                <td>Programmation Oreinté Objet</td>
+            </tr>
+            <tr class="apres-midi">
+                <td>14h - 18h</td>
+                <td>Programmation réseaux et systèmes</td>
+                <td>Prototypage avec Python</td>
+                <td>Programmation en Java</td>
+                <td>Programmation Web et Framework</td>
+                <td>Programmation Oreinté Objet</td>
+            </tr>
+        </tbody>
+    </table>
+    <footer>
+        <p class="P1">Copyright 2025 Ibrahim DRABO - Toute reproduction interdite et punis par la loi.</p>
+        <p class="P2">Pour en savoir plus <a href="https://www.uts.bf">Découvrer l'Université Thomas SANKARA</a></p>
+            <div class="container-map">
+                <div class="map-frame">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.6470896953565!2d-1.3475847264623837!3d12.473207025612297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe2ec85db70fdbbd%3A0x968f6dd4236ad573!2sUniversit%C3%A9%20Thomas%20Sankara!5e0!3m2!1sfr!2sbf!4v1765816011684!5m2!1sfr!2sbf"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+                <div class="map-infos">
+                    <h3>Vos racourcie</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="filiere.html">Nos filière</a></li>
+                        <li><a href="enseignants.html">Nos enseignants</a></li>
+                        <li><a href="#emplois">Nos emplois-temps</a></li>
+                        <li><a href="contact.html">Contactez-nous</a></li>
+                    </ul>
+                </div>
+
+            </div>
+    </footer>
+ <script src="script/filtre_em.js"></script>   
+</body>
+</html>

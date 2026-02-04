@@ -1,0 +1,166 @@
+/* Importation de la police */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+/* Style de base pour éviter le centrage forcé de l'en-tête */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: blanchedalmond;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* --- EN-TÊTE (Header) --- */
+header {
+    padding: 10px 0 0 0;
+    background-color: gray;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.sc {
+    text-align: center; /* Aligné à gauche comme dans l'image 2 */
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 5px 0 15px 0;
+    width: 90%;
+    line-height: 1.2;
+}
+
+/* Navigation en ligne */
+nav{
+    width: 100%;;
+    display: flex;
+    justify-content: center;
+
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; /* Aligne les éléments côte à côte */
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 20px;
+    color: black;
+    text-transform: uppercase;
+    background-color: aqua;
+    font-weight: 700;
+    font-size: 0.9em;
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+.table {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 850;
+    font-style: normal;
+    font-variation-settings:'wdth' 100; 
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; background: white;
+}
+th, td { 
+    border: 1px solid #000;
+    padding: 12px; 
+    text-align: center; 
+}
+th { 
+    background-color: aqua; 
+    color: black; 
+}
+.matin { 
+    background-color: #e8f5e9; 
+
+}
+.apres-midi { 
+    background-color: #fff3e0; 
+}
+.hidden { 
+    display: none; 
+}
+.btn-filter { 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    background: gray; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+}
+h2{
+    text-align: center;
+}
+
+footer{
+    font-size: auto;
+    padding: 2px 5px;
+    background-color: gray;
+    
+}
+
+
+/* Les raccourcie */
+.container-map{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 20px;
+    background-color: gray;
+    padding: 20px;
+}
+
+.map-frame{
+    flex: 2;
+}
+
+.map-frame iframe{
+    width: 75%;
+    height: 400px;
+    border-radius: 8px;
+}
+.map-info h3{
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #000;
+}
+
+.map-info ul{
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.map-info li{
+    margin-bottom: 10px;
+}
+
+.map-info a{
+    text-decoration: none;
+    color: #0000EE;
+}
+/* fin des raccourcie*/
+.P1, .P2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-weight: 700 ;
+    text-align: center;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filière</title>
+    <link rel="stylesheet" href="style2.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="nos">
+         <img class="logo" src="Images/logo-uts.jpeg" alt="logo de l'université Thomas Sankara">
+        <p class="sc"><script>
+            let actuel= new Date();
+            document.write("Bienvenue à vous aujourd'hui nous somme " +actuel);
+            /*const dateMessage = "Bienvenue à vous chers visiteur a cet jours du " + new Date().toUTCString();
+            document.getElementById('message-date-heure').textContent = dateMessage;*/
+        
+        </script></p>
+        <nav>
+            <div class="table">
+                <ul>
+                    <li class="menu-ind">
+                      <a href="index.html">Accueil</a>
+                    </li>
+                    <li class="menu-fil">
+                        <a href="filiere.html">Voir les filières</a>
+                    </li>
+                    <li class="menu-ens">
+                        <a href="enseignants.html">Enseigants</a>
+                    </li>
+                    <li class="menu-emp">
+                        <a href="emplois-temps.html">Emploi du temps</a>
+                    </li>
+                    <li class="menu-cont">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Rechercher une filière ou une info..." onkeyup="rechercher()">
+        <button type="button">search</button>
+    </div>
+    <main id="contenuPage">
+        <section>
+            <h2>Filières du département de Mathématique-Informatique</h2>
+            <p>
+                Un Pilier Scientifique Majeur
+                Le département de Mathématique-Informatique représente un axe central de l'Unité de Formation et de Recherche en Science et Technologies (UFR-ST). 
+                Il s'articule autour de deux piliers fondamentaux : les mathématiques appliquées et l'informatique rattachée aux mathématiques. À eux seuls, ces deux domaines regroupent
+                 plus de la moitié des filières proposées par l'UFR, soulignant leur importance prépondérante dans l'offre académique actuelle.
+                Offre de Formation et Système Académique
+                Fidèle aux standards internationaux, le département propose un parcours académique complet structuré selon le système LMD (Licence, Master, Doctorat) :
+                Licence : Pour l'acquisition des bases fondamentales et théoriques.
+                Master : Pour la spécialisation dans des domaines de pointe du monde scientifique.
+                Doctorat : Pour la recherche avancée et la contribution à l'innovation.
+                Accessibilité et Soutien Étatique
+                L'accès à ces formations de haut niveau est facilité par l'engagement de l'État Burkinabé. Une grande partie des étudiants bénéficie de subventions publiques, permettant
+                 ainsi de former les futurs cadres et scientifiques du pays malgré les défis économiques, garantissant une éducation inclusive au sein de cette institution de prestige.
+            </p>
+        </section>
+        <span> La liste des Filières du département Mathematique-Informatique est la suivante :</span>
+        <section>
+            <h2>Niveau licence</h2>
+            <div class="licence">
+                <table  border=2 width=75%>
+                    <tr> <td>Nom</td> <td>Description</td> <td>Durée</td> <td>Débouchés</td></tr>
+                    <tr> <td>LIME-LISE</td> <td>Licence d'Ingénierie Mathématique et Economique <br>&<br>Licence d'Ingénierie Statistique et Economique</td> <td>36 mois</td> <td>Analyste Financier <br> Analyste de Data scientist,<br> Chargé d'études économique</td></tr>
+                    <tr> <td>Mathematique</td> <td>Licence à 100% mathematique </td> <td>36 mois</td> <td>Enseigants des Mathematique, <br>La cryptographie, <br> Ingenierie et la gestion des risques</td></tr>
+                    <tr> <td>Informatique</td> <td>Plus axés sur la programmation, <br> la gestion des données, <br> la cybersécurité, <br> le réseau Informatique</td> <td>36 mois</td> <td>Développeur web et logiciel, <br>Administrateur réseaux et systémes, <br>Technicien de support Informatique, <br>Analyste de données</td></tr>
+                    <tr></tr>
+                </table>
+            </div>
+            
+        </section>
+        <section>
+            <h2>Niveau Master</h2>
+            <div class="master">
+                <table border=2 width= 75%>
+                <tr><td>Nom</td> <td>Description</td> <td>Durée</td> <td>Débouchés</td></tr>
+                <tr><td>MIME-MISE</td> <td>Master en Ingénierie Mathematique et Economique<br> & <br>Master en Ingénierie Statistique et Economique <br> Ils sont spécialisés dans la mondélisation, l'analyse quantitative, et en big data, <br> seul les étudiants diplomé de LIME-LISE peuvent prétendre y postulé</td> <td>24 mois</td> <td>Domaine de la Finance, Banque, Assurance <br>en tant que Risk Manager, Chargé d'études actuarielles, contrôleur de gestion. <br>
+                Domaine de la Technologie et Données en tant que <br> Data Scientist, Data Analyst, bref cette formation a beaucoup de débouchées</td></tr>
+                <tr><td>Mathematique</td> <td>Master en orientation Fondamentale(Recherche) ou Appliquée (Professionnel)</td> <td>24 mois</td> <td>Enseigant-Chercheur, Data Science et Intelligence Artificielle, <br> Biostatisticien, Actuaire, Analyste Quantitatif.</td></tr>
+                <tr><td>Informatique</td> <td>En ce qui concerne le master en Informatique, l'Université Thomas Sankara ne propose pas de formation pour l'instant. Pour un étudiant ayant la licence en Informatique, il doivra postulé à l'Université Joseph Ki Zerbo pour le master.
+                A leur niveau, il propose la formation en cybersécurité, Génie logiciel et web, Analyse de données, Administrateur réseaux etc.<td>24 mois</td> <td>Ingénieur en Développement Logiciel, Architechte Logiciel, <br>Ingénieur DevOps(Développementet Opérations), Ingénieur en Cybersécurité(Consultant en Sécurité des Systèmes d'Information), <br>Ingénieur Réseaux et Systèmes, Ingénieur Big data etc.
+                l'Informatique propose d'énorme débouchées</td></tr>
+                </table>
+            </div>
+        </section>
+        <section>
+            <h2>Niveau Doctorat</h2>
+            <p class="doctorat">
+                L'Université Thomas Sankara offre des formations de niveau Doctorat qui couvrent
+                les domaines des Mathématiques et des Statistique.<br> Mais cette formation relève
+                 d'une autre structure , notament l'Ecole Doctorale qui encadre la recherche.
+            </p>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p class="P1">Copyright 2025 Ibrahim DRABO - Toute reproduction interdite et punis par la loi.</p>
+        <p class="P2">Pour en savoir plus <a href="https://www.uts.bf">Découvrer l'Université Thomas SANKARA</a></p>
+        <div class="container-map">
+            <div class="map-frame">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.6470896953565!2d-1.3475847264623837!3d12.473207025612297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe2ec85db70fdbbd%3A0x968f6dd4236ad573!2sUniversit%C3%A9%20Thomas%20Sankara!5e0!3m2!1sfr!2sbf!4v1765816011684!5m2!1sfr!2sbf"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+            <div class="map-infos">
+                <h3>Vos racourcie</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#nos">Nos filière</a></li>
+                    <li><a href="enseignants.html">Nos enseignants</a></li>
+                    <li><a href="emplois-temps.html">Nos emplois-temps</a></li>
+                    <li><a href="contact.html">Contactez-nous</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+    <script src="script/script_filière.js"></script>
+</body>
+</html>

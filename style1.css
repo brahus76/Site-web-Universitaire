@@ -1,0 +1,233 @@
+/* Importation de la police */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+/* Style de base pour éviter le centrage forcé de l'en-tête */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: blanchedalmond;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* --- EN-TÊTE (Header) --- */
+header {
+    padding: 10px 0 0 0;
+    background-color: gray;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.sc {
+    text-align: center; /* Aligné à gauche comme dans l'image 2 */
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 5px 0 15px 0;
+    width: 90%;
+    line-height: 1.2;
+}
+
+/* Navigation en ligne */
+nav{
+    width: 100%;;
+    display: flex;
+    justify-content: center;
+
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; /* Aligne les éléments côte à côte */
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 20px;
+    color: black;
+    text-transform: uppercase;
+    background-color: aqua;
+    font-weight: 700;
+    font-size: 0.9em;
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+/* --- FORMULAIRE --- */
+main {
+    display: flex;
+    justify-content: center; /* Centre le formulaire horizontalement */
+    padding: 40px 20px;
+}
+
+.table{
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+form {
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px; /* Largeur du formulaire réduite */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.separation {
+    width: 100%;
+    height: 2px;
+    background-color: blanchedalmond;
+    margin-bottom: 20px;
+}
+
+/* Mise en page interne du formulaire */
+.corps-formulaire {
+    display: flex;
+    gap: 30px; /* Espace entre la gauche et la droite */
+}
+
+.gauche {
+    flex: 1; /* Prend moins de place */
+}
+
+.droite {
+    flex: 1.8; /* AUGMENTÉ : La section Message est plus large */
+}
+
+.input-box {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box input, .input-box textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid #ffebcd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.input-box textarea {
+    height: 160px; /* Hauteur de la zone message */
+    resize: none;
+}
+
+/* Bouton et Pied */
+.pied-formulaire {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .pied-formulaire button {
+    background-color: blanchedalmond;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+form .pied-formulaire button:hover {
+    transform: scale(1.05);
+    background-color: #f5deb3;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.85em;
+    height: 1em;
+}
+
+footer{
+    font-size: auto;
+    padding: 2px 5px;
+    background-color: gray;
+    
+}
+
+.P1, .P2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-weight: 700 ;
+    text-align: center;
+}
+
+
+/* Les raccourcie */
+.container-map{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 20px;
+    background-color: gray;
+    padding: 20px;
+}
+
+.map-frame{
+    flex: 2;
+}
+
+.map-frame iframe{
+    width: 75%;
+    height: 400px;
+    border-radius: 8px;
+}
+.map-info h3{
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #000;
+}
+
+.map-info ul{
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.map-info li{
+    margin-bottom: 10px;
+}
+
+.map-info a{
+    text-decoration: none;
+    color: #0000EE;
+    font-style: none;
+}
+/* fin des raccourcie*/
+
+/* Adaptabilité mobile */
+@media screen and (max-width: 650px) {
+    .corps-formulaire {
+        flex-direction: column;
+    }
+    .droite {
+        flex: 1;
+    }
+}
+

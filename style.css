@@ -1,0 +1,304 @@
+
+/* Importation de la police */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+/* Style de base pour éviter le centrage forcé de l'en-tête */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: blanchedalmond;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* --- EN-TÊTE (Header) --- */
+header {
+    padding: 10px 0 0 0;
+    background-color: gray;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.logo {
+    
+    height: 70px;
+    width: auto;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.sc {
+
+    text-align: center; 
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 5px 0 15px 0;
+    width: 90%;
+    line-height: 1.2;
+}
+
+
+
+nav{
+    width: 100%;;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+nav a {
+    
+
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 20px;
+    color: black;
+    text-transform: uppercase;
+    background-color: aqua;
+    font-weight: 700;
+    font-size: 0.9em;
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+
+
+footer{
+    font-size: auto;
+    padding: 2px 5px;
+    background-color: gray;
+    
+}
+
+
+.s1,.s2,.s3,.s4,.s5,.s6{
+    font-weight: bold;
+    font-style: italic;
+}
+.Historique, .Statut, .Gouvernance, .Unité, .UFR{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    border: 2px solid;
+    border-radius: 15px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+
+}
+
+.Historique p{
+    flex: 2;
+    max-width: 60%;
+    font-weight: 500;
+}
+.Historique img{
+    flex: 1;
+    max-width: 40%;
+    height: auto;
+}
+section h2{
+    text-align: center;
+    color: darkslategray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+span{
+    font-weight: 800;
+}
+
+
+
+.table {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 850;
+    font-style: normal;
+    font-variation-settings:'wdth' 100; 
+}
+
+.P1,.P2, .P3, .P4, .P5, .P6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-weight: 700 ;
+    text-align: center;
+}
+.text-gauche{
+    flex: 70%;
+    padding-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-weight: 700 ;
+    text-align: center;
+}
+.image-droite{
+
+    flex: 0 0 30%;
+    text-align: center;
+}
+.image-droite img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.presentation{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.U1, .U2{
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+   
+}
+
+
+h1{
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 850; 
+    font-style: normal;
+    
+    font-variation-settings: 'wdth' 100; 
+}
+
+.texte-accroche{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.texte-accroche h2{
+    color: #004d99;
+    align-items: center;
+}
+
+#caroussel{
+    width: 640px;
+    overflow: hidden;
+    border: 2px solid #333;
+    
+}
+.section-a-la-une{
+    display: flex;
+    justify-content: center;
+}
+
+.images{
+    display: flex;
+    animation-duration: 20s;
+    animation-name: mesImages;
+    animation-iteration-count: infinite;
+}
+@keyframes mesImages {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-640px);
+    }
+    50%{
+        transform: translateX(-1280px);
+    }
+    75%{
+        transform: translateX(-1920px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.text-accroche{
+    position: -ms-page;
+    top: 72px;
+    background-color: rgba(245, 245, 245, 0.692);
+    text-align: center;
+    width: auto;
+    color: black;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.text{
+    font-style: oblique;
+    animation: defile 15s infinite linear;
+    display: inline-block;
+}
+
+
+@keyframes defile {
+    form{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+/* Les raccourcie */
+.container-map{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 20px;
+    background-color: gray;
+    padding: 20px;
+}
+
+.map-frame{
+    flex: 2;
+}
+
+.map-frame iframe{
+    width: 75%;
+    height: 400px;
+    border-radius: 8px;
+}
+.map-info h3{
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #000;
+}
+
+.map-info ul{
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.map-info li{
+    margin-bottom: 10px;
+}
+
+.map-info a{
+    text-decoration: none;
+    color: #0000EE;
+}
+/* fin des raccourcie*/
